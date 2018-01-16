@@ -1,0 +1,32 @@
+p {
+    border: 3px solid;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    font-size: x-large;
+    background-color: lightgrey;
+}
+
+.red-border{
+    border-color: red;
+}
+
+.red-text{
+    color: red;
+}
+
+.green-border {
+    border-color: green;
+}
+
+.green-text{
+    color: green;
+}
+
+.blue-border {
+    border-color: blue;
+}
+
+.blue-text{
+    color: blue;
+}
