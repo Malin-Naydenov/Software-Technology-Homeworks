@@ -1,0 +1,37 @@
+<div class="container body-content span=8 offset=2">
+    <div class="well">
+        <form class="form-horizontal">
+            <div class="container body-content">
+                <div class="row">
+                    <div class="col-md-12">
+                        {{#if user}}
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Email:</label>
+                                <div class="col-sm-4">
+                                    <label class="form-control">{{this.user.email}}</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="inputEmail">Full Name:</label>
+                                <div class="col-sm-4 ">
+                                    <label class="form-control">{{this.user.fullName}}</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" for="inputEmail">Articles count:</label>
+                                <div class="col-sm-4 ">
+                                    <label class="form-control">{{this.user.articles.length}}</label>
+                                </div>
+                            </div>
+                        {{/if}}
+                        {{#unless user}}
+                            <h3>PLEASE LOG IN</h3>
+                        {{/unless}}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
